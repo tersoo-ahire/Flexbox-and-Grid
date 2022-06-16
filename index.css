@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("LexendDeca-VariableFont_wght.ttf");
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+}
+
+#sedan-button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  border: none;
+  color: hsl(31, 77%, 52%);
+  padding: 15px;
+  display: inline-block;
+  margin-top: 35px;
+  width: 140px;
+}
+
+#sedan-button:active {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+#suv-button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  border: none;
+  color: hsl(184, 100%, 22%);
+  padding: 15px;
+  display: inline-block;
+  margin-top: 35px;
+  width: 140px;
+}
+
+#suv-button:active {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+#luxury-button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  border: none;
+  color: hsl(179, 100%, 13%);
+  padding: 15px;
+  display: inline-block;
+  margin-top: 35px;
+  width: 140px;
+}
+
+#luxury-button:active {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  padding: 45px 45px;
+  width: 35%;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  padding: 45px 45px;
+  width: 35%;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 45px 45px;
+  width: 35%;
+}
+
+.position {
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+#maincon {
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width:1000px) and (min-width:700px){
+  #maincon {
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .sedan, .suv, .luxury {
+    width: 80%;
+    height: 420px;
+  } 
+  .position {
+  text-align: center;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+  #maincon {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 400px;
+  }
+  .sedan, .suv, .luxury {
+    width: 100%;
+    height: 400px;
+  }
+  #sedan-button, #suv-button, #sluxury-button {
+    margin-top: 40px;
+  }
+}
+
+
+
